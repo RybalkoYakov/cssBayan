@@ -59,7 +59,6 @@ h1 {
 .item {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
     width: 100%;
     min-width: 250px;
     background-color: #eeeeee;
@@ -119,3 +118,11 @@ h1 {
 .item__input:checked ~ .item__label > .item__heading {
     color: #1a94ea;
 }
+
+.item__label:hover ~ .item__content, .item__content:hover{
+    max-height: 25rem;
+}
+
+/*.item__label:hover > .item__icon {*/
+/*    transform: rotateZ(270deg);*/
+/*}*/
