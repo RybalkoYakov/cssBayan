@@ -124,6 +124,20 @@ h1 {
     opacity: 1;
 }
 
+/* ACTIVE ITEM */
+.item__heading {
+    transition: color .1s linear;
+}
+
+.item__label:active > .item__info > .item__heading {
+    color: #ff002f;
+}
+
+.item__label:active > .item__content > img {
+    filter: brightness(1.2);
+}
+
+
 @media (min-width: 820px) {
     /* HOVER ITEMS */
     .item__label:hover > .item__content {
